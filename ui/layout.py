@@ -53,9 +53,9 @@ def render_sidebar():
 
         st.markdown("""
         #### 📌 Panduan
-        - Tulis poin kasar
-        - Pilih format & bahasa
-        - Klik **Generate**
+        - Tuliskan poin atau pesan inti yang ingin disampaikan dalam email.
+        - Pilih format dan bahasa sesuai kebutuhan di panel pengaturan.
+        - Klik tombol **Generate** untuk membuat email secara otomatis.
         """)
 
     return tone, language
