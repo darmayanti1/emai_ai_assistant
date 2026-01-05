@@ -75,7 +75,7 @@ st.markdown("""
         padding: 1rem;
     }
 
-    /* Menghilangkan border kartu kosong bawaan streamlit jika ada */
+    /* */
     .element-container:empty {
         display: none;
     }
@@ -90,7 +90,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("✉️ AI Asisten Email Profesional")
+st.title("✉️ Asisten Email Profesional")
 st.markdown("Transformasikan poin-poin pikiran Anda menjadi draf email resmi dalam sekejap.")
 
 # Memanggil Sidebar
@@ -99,7 +99,7 @@ tone, language = render_sidebar()
 # Area Input
 user_message = st.text_area(
     "Masukkan pesan / poin kasar Anda:",
-    placeholder="Contoh: telat kirim laporan karena laptop rusak, sore ini baru dikirim.",
+    placeholder="Contoh: nama saya, fresh graduate, pernah magang dimana.",
     height=200
 )
 
@@ -118,6 +118,5 @@ if st.button("🚀 GENERATE EMAIL"):
                 # Menampilkan hasil draf email
                 st.subheader("📧 Hasil Draf Email")
                 st.code(result, language="text")
-                st.success("Draf email berhasil dibuat sesuai nada bicara Anda.")
     else:
         st.warning("⚠️ Mohon masukkan pesan terlebih dahulu.")
